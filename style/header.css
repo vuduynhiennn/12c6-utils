@@ -1,0 +1,63 @@
+header {
+    background-color: #20232A;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    position: fixed;
+    z-index: 1000000000000000000;
+}
+
+.header--ctn {
+    padding: 0px 145px;
+}
+
+.fas {
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.header--ctn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    display: none;
+    cursor: pointer;
+}
+.fa-cuttlefish {
+    font-size: 40px;
+    color: #54DAFB;
+    margin: 0px 4px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.logo:hover {
+    color: #54DAFB;
+    transition: 0.6s;
+}
+.Header--text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+.link:hover {
+    color: #54DAFB;
+    transition: 0.3s;
+}

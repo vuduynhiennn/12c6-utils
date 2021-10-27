@@ -1,0 +1,84 @@
+footer {
+    background-color: #20232A;
+    color: white;
+    height: fit-content;
+    font-weight: 300;
+    z-index: 10000;
+}
+
+.footer--ctn {
+    display: flex;
+    padding: 50px 145px;
+    justify-content: space-between;
+}
+
+.footer--left__list {
+    font-size: 15px;
+    color: #999999;
+}
+
+.footer--right__items {
+    margin-right: 12px;
+    font-size: 15px;
+}
+.footer--right__items:hover {
+    transition: 0.4s;
+    color: #54DAFB;
+}
+
+.footer--right {
+    /* background-color: pink; */
+    width: 33%;
+    align-items: center;
+    line-height: 25px;
+    text-align: center;
+    font-size: 15px;
+}
+.footer--left {
+    width: 33%;
+}
+
+.heading {
+    font-size: 30px;
+    color: #999999;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.footer--mid {
+    text-align: center;
+    line-height: 20px;
+    width: 33%;
+}
+
+.footer--text {
+    color: white;
+    font-size: 15px;
+    text-align: start;
+}
+
+.text--mark {
+    color: #54DAFB;
+}
+
+.footer--right-ctn__items {
+    /* padding-left: 80px; */
+    padding-left: 30px;
+    height: 100px;
+    overflow: scroll;
+    text-align:justify;
+    display: flex;
+}
+
+.footer--right-ctn__items::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: #F5F5F5;
+} 
+
+.footer--right-ctn__items::-webkit-scrollbar-track {
+    width: 0px;
+    height: 0px;
+    background-color: #20232A;
+
+}

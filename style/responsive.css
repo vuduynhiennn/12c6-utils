@@ -1,0 +1,43 @@
+
+@media screen and (max-width: 1040px) {
+    .icon {
+        display:block;
+        cursor: pointer;
+    }
+    #time {
+        display: none;
+    }
+    .footer--ctn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .footer--mid {
+        padding: 60px 0px;
+        width: 100%;
+    }
+    .footer--left {
+        width: 100%;
+    }
+    .footer--right {
+        width: 100%;
+    }
+    .heading {
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 560px) {
+  .main {
+    padding: 100px 100px 50px 100px;
+  }
+  .header--ctn {
+    padding: 0px 50px;
+}
+}

@@ -1,0 +1,84 @@
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-gap: 3em;
+}
+.note {
+    width: 100%;
+    padding: 3em 2em;
+}
+.note--blue {
+    position: relative;
+    background: #20232A;
+    min-height: 400px;
+    background: linear-gradient(-150deg, transparent 2em, #32363f 0);
+    border-radius: 0.5em;
+}
+.note--blue::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(210deg, transparent 50%, rgba(53, 86, 78, .6) 0, rgba(43, 70, 64, .8) 100%) 100% 0 no-repeat;
+    width: 4em;
+    height: 2.3094010768em;
+    transform: rotateX(180deg) rotateZ(120deg);
+    border-bottom-left-radius: inherit;
+    box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, .15);
+}
+.note--organge {
+    position: relative;
+    background: #e1a36f;
+    background: linear-gradient(-150deg, transparent 1.5em, #e1a36f 0);
+    border-radius: 0.5em;
+}
+.note--organge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(210deg, transparent 50%, rgba(212, 123, 48, .6) 0, rgba(194, 110, 40, .8) 100%) 100% 0 no-repeat;
+    width: 3em;
+    height: 1.7320508076em;
+    transform: rotateX(180deg) rotateZ(120deg);
+    border-bottom-left-radius: inherit;
+    box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, .15);
+}
+.note--pink {
+    position: relative;
+    background: #d97d70;
+    background: linear-gradient(-110deg, transparent 2em, #d97d70 0);
+    border-radius: 0.5em;
+}
+.note--pink::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(250deg, transparent 50%, rgba(199, 71, 53, .6) 0, rgba(179, 64, 48, .8) 100%) 100% 0 no-repeat;
+    width: 2.128355545em;
+    height: 5.8476088003em;
+    transform: rotateX(180deg) rotateZ(40deg);
+    border-bottom-left-radius: inherit;
+    box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, .15);
+}
+.note--green {
+    position: relative;
+    background: #6f916e;
+    background: linear-gradient(-155deg, transparent 2.5em, #6f916e 0);
+    border-radius: 0.5em;
+}
+.note--green::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(205deg, transparent 50%, rgba(78, 102, 77, .6) 0, rgba(67, 87, 66, .8) 100%) 100% 0 no-repeat;
+    width: 5.9155039579em;
+    height: 2.7584447974em;
+    transform: rotateX(180deg) rotateZ(130deg);
+    border-bottom-left-radius: inherit;
+    box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0, 0, 0, .15);
+}
