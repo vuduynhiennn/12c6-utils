@@ -6,12 +6,10 @@ html {
 }
 
 .main {
-    display: grid;
-    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 3em;
     padding: 100px 145px 50px 145px;
 }
 
@@ -20,9 +18,9 @@ html {
 }
 table {
     /* background-color: aqua; */
-    top: -10px;
+    /* top: -10px; */
     position: relative;
-    right: -45px;
+    /* right: -45px; */
     width: 100%;
     text-align: center;
     line-height: 25px;
