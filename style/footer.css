@@ -83,3 +83,9 @@ footer {
     background-color: #20232A;
 
 }
+
+.footer--link {
+    font-size: 2rem;
+    padding: 40px 40px;
+    line-height: 2rem;
+}
