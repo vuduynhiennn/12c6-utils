@@ -1,5 +1,16 @@
 
 @media screen and (max-width: 1040px) {
+    html {
+        font-size: 10px;
+        box-sizing: border-box;
+    }
+    header {
+        width: 100vw;
+    }
+    .header--ctn {
+        padding: 0px 10px;
+        width: 100vw;
+    }
     .icon {
         display:block;
         cursor: pointer;
@@ -7,26 +18,11 @@
     #time {
         display: none;
     }
-    .footer--ctn {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        
+    .main {
+        padding: 90px 10px;
     }
-    .footer--mid {
-        padding: 60px 0px;
-        width: 100%;
-    }
-    .footer--left {
-        width: 100%;
-    }
-    .footer--right {
-        width: 100%;
-    }
-    .heading {
-        width: 100%;
+    table th {
+        font-size: 2rem;
     }
 }
 
@@ -34,10 +30,5 @@
 
 
 @media screen and (max-width: 560px) {
-  .main {
-    padding: 100px 100px 50px 100px;
-  }
-  .header--ctn {
-    padding: 0px 50px;
-}
+
 }

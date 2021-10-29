@@ -2,6 +2,7 @@
 
 html {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
@@ -16,28 +17,18 @@ html {
 .main--left {
     width: 90%;
 }
-table {
-    /* background-color: aqua; */
-    /* top: -10px; */
-    position: relative;
-    /* right: -45px; */
-    width: 100%;
-    text-align: center;
-    line-height: 25px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    margin-right: 0px;
-    border: 0px;
-    padding: 0px;
-}
 table th {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
-    padding-right: 10px;
+    line-height: 3rem;
 }
 
 table td {
-    font-size: 15px;
+    font-size: 1.5rem;
+}
+table {
+    width: 100%;
+    margin-top: 30px;
 }
 .main--right__content {
     width: 100%;
@@ -46,12 +37,22 @@ table td {
     width: 100%;
 }
 
+.content {
+    color: #0044ff;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.footer--text {
+    color: #000000;
+}
+
 .btvn--box {
     text-align: start;
-    line-height: 30px;
-    font-size: 25px;
+    line-height: 3rem;
+    font-size: 2rem;
     font-weight: 300;
-    border: 1px solid #999999;
+    border: 1px solid #000000;
     padding: 20px;
     border-radius: 10px;
     margin: 0px 0px 20px 0px;
@@ -59,13 +60,16 @@ table td {
 
 .monhoc {
     padding-bottom: 20px;
-    color: yellow;
-    font-size: 35px;
+    font-weight: 500;
+    color: #73ff00;
+    font-size: 3rem;
     text-transform: uppercase   ;
 }
 
 .deadline {
     color: #54DAFB;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .main--right {

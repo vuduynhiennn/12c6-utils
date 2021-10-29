@@ -39,9 +39,9 @@ footer {
     width: 33%;
 }
 
-.heading {
-    font-size: 30px;
-    color: #999999;
+.headingTop {
+    font-size: 4rem;
+    color: #000000;
     margin-bottom: 25px;
     font-weight: 400;
 }
