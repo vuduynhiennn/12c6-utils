@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" href="./style/conten-right.css">
     <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/quote.css">
     <script src="./script/time.js"></script>
     <style>
         .counter {
@@ -41,10 +42,11 @@
             <div id="time">
             </div>
 
+            <!-- <marquee behavior="" direction=""></marquee> -->
 
-            <div class="icon">
-                <i class="fas fa-bars"></i>
-            </div>
+            <marquee width="30%" class="icon">
+                Vision without action is daydream. Action without vision is nightmare
+            </marquee>
         </div>
 
     </header>
@@ -56,27 +58,41 @@
                     <div class="btvn">
                         <h1 class="headingTop">Bài Tập Về Nhà</h1>
 
-                        
+
 
                         <div class="btvn--box">
                             <h1 class="monhoc">Hóa</h1>
                             <p class="footer--text">
                                 <span class="content"> Nội dung: </span>
                                 <br>
-
+                                <!-- đê bắt đầu từ đây  -->
                                 <span style="color: black;" class="content">
-                                    1) Làm đề polime thầy gửi trong nhóm lớp
+                                    1) Làm đề cương POLIME
+                                    <a href="./document/ĐỀ-CƯƠNG-VỀ-POLIME.docx"> tải đề</a>
                                 </span>
                                 <br>
                                 <span class="content">Hạn: </span> <span class="content" style="color: red;"
                                     class="red">
-                                    Hôm nào có tiết
+                                    Thứ 2 thầy chữa (01/11/2021)
+                                </span>
+
+                                <br>
+
+                                <span style="color: black;" class="content">
+                                    2) Làm đề bài tập AMINO AXIT 4
+                                    <a href="./document/BÀI-TẬP-AMINNO-AXIT-4.docx"> tải đề</a>
                                 </span>
                                 <br>
-                                
+                                <span class="content">Hạn: </span> <span class="content" style="color: red;"
+                                    class="red">
+                                    Thứ 2 thầy chữa (01/11/2021)
+                                </span>
+
+                                <br>
+
                                 <span style="color: black;" class="content">
-                                    2) Làm đề thầy gửi trong nhóm lớp
-                                    <a href="./document/ĐỀ-ÔN-TẬP-THI-GIỮA-KÌ-1-HÓA-12.docx"> hoặc ấn vào đây tải đề</a>
+                                    3) Làm đề ôn tập giữa kì 1 hóa 12
+                                    <a href="./document/ĐỀ-ÔN-TẬP-THI-GIỮA-KÌ-1-HÓA-12.docx"> tải đề</a>
                                 </span>
                                 <br>
                                 <span class="content">Hạn: </span> <span class="content" style="color: red;"
@@ -90,7 +106,7 @@
 
                     </div>
                 </div>
-        
+
             </div>
         </div>
 
@@ -197,35 +213,37 @@
             <SCRIPT>
 
                 expireDate = new Date
-                expireDate.setMonth(expireDate.getMonth()+6)
+                expireDate.setMonth(expireDate.getMonth() + 6)
                 jcount = eval(cookieVal("jaafarCounter"))
                 jcount++
-                document.cookie = "jaafarCounter="+jcount+";expires=" + expireDate.toGMTString()
-                
+                document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+
                 function cookieVal(cookieName) {
-                thisCookie = document.cookie.split("; ")
-                for (i=0; i<thisCookie.length; i++){
-                    if (cookieName == thisCookie[i].split("=")[0]){
-                        return thisCookie[i].split("=")[1]
+                    thisCookie = document.cookie.split("; ")
+                    for (i = 0; i < thisCookie.length; i++) {
+                        if (cookieName == thisCookie[i].split("=")[0]) {
+                            return thisCookie[i].split("=")[1]
+                        }
                     }
+                    return 0
                 }
-                return 0
+
+                function page_counter() {
+                    for (i = 0; i < (7 - jcount.toString().length); i++)
+                        document.write('<span class="counter">0</span>')
+                    for (y = 0; y < (jcount.toString().length); y++)
+                        document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
                 }
-                
-                function page_counter(){
-                for (i=0;i<(7-jcount.toString().length);i++)
-                document.write('<span class="counter">0</span>')
-                for (y=0;y<(jcount.toString().length);y++)
-                document.write('<span class="counter">'+jcount.toString().charAt(y)+'</span>')
-                }
-                
-                </SCRIPT>
-                    <!--
+
+            </SCRIPT>
+            <!--
                         This script downloaded from www.JavaScriptBank.com
                         Come to view and download over 2000+ free javascript at www.JavaScriptBank.com
                     -->
-                
-            <b>You visited this page <SCRIPT>page_counter(jcount);</SCRIPT> time(s).</b>
+
+            <b>You visited this page
+                <SCRIPT>page_counter(jcount);</SCRIPT> time(s).
+            </b>
         </div>
     </footer>
 </body>
