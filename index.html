@@ -17,6 +17,14 @@
     <link rel="stylesheet" href="./style/conten-right.css">
     <link rel="stylesheet" href="./style/responsive.css">
     <script src="./script/time.js"></script>
+    <style>
+        .counter {
+            background-color: black;
+            color: yellow;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -62,9 +70,9 @@
                                     <span class="content">Hạn: </span> <span class="content" style="color: red;"
                                         class="red">
                                         tối 31/10/2021</span>
-                                        <br>
+                                    <br>
                                     3)
-                                    Báo các bạn giúp cô: thời gian thu bài ghi và đề cương (từ bài 8-13) là:  21h-21h30
+                                    Báo các bạn giúp cô: thời gian thu bài ghi và đề cương (từ bài 8-13) là: 21h-21h30
                                     tối mai ngày 30/10.
                                     Điểm = (đề cương×2 + bài nàyx1)/3
                                     Điểm bài trắc nghiệm cô cộng đều cho mỗi bạn 1 điểm.
@@ -72,9 +80,9 @@
                                     cho mỗi bạn 1-2 điểm tùy thuộc vào cách trình bày và giải bài của các bạn.
                                     <br>
                                     <span class="content">Hạn: </span> <span class="content" style="color: red;"
-                                    class="red">
-                                    21:00 đến 21:30 tối mai 30/10 </span>
-                                   
+                                        class="red">
+                                        21:00 đến 21:30 tối mai 30/10 </span>
+
                                 </span>
 
 
@@ -100,7 +108,7 @@
                             </p>
                         </div>
 
-                       
+
 
                     </div>
                 </div>
@@ -117,6 +125,8 @@
         </div>
 
         <div class="main--right">
+            <h1>cập nhật 30/10/2021</h1>
+            <br>
             <div class="main--right__content">
                 <table class="morning">
                     <thead>
@@ -131,36 +141,44 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>CC</td>
+                            <td>TD</td>
+                            <td>Toán</td>
+                            <td>Sử</td>
+                            <td>Hóa</td>
+                            <td>Văn</td>
+                        </tr>
+                        <tr>
+                            <td>Sinh</td>
+                            <td>Lí</td>
+                            <td>Toán</td>
+                            <td>Anh</td>
+                            <td>TD</td>
+                            <td>Lí</td>
+                        </tr>
+                        <tr>
+                            <td>Lí</td>
+                            <td>Văn</td>
+                            <td>Hóa</td>
+                            <td>Toán</td>
+                            <td>CN</td>
+                            <td>SH</td>
+                        </tr>
+                        <tr>
+                            <td>GD</td>
+                            <td>Văn</td>
+                            <td>Anh</td>
+                            <td>Toán</td>
+                            <td>Anh</td>
+                            <td>Sử</td>
+                        </tr>
+                        <tr>
                             <td>Hóa</td>
                             <td>Sinh</td>
-                            <td>Sử</td>
-                            <td>Lí</td>
-                            <td>Lí</td>
+                            <td>Tin</td>
+                            <td>GDQP</td>
                             <td>Toán</td>
-                        </tr>
-                        <tr>
-                            <td>Anh</td>
-                            <td>Toán</td>
-                            <td>Hóa</td>
-                            <td>Văn</td>
-                            <td>Sử</td>
-                            <td>Toán</td>
-                        </tr>
-                        <tr>
-                            <td>Toán</td>
-                            <td>GDCD</td>
-                            <td>Văn</td>
-                            <td>Anh</td>
                             <td>Địa</td>
-                            <td>Lí</td>
-                        </tr>
-                        <tr>
-                            <td>Toán</td>
-                            <td>Hóa</td>
-                            <td>Văn</td>
-                            <td>Anh</td>
-                            <td>Sinh</td>
-                            <td> </td>
                         </tr>
                     </tbody>
                 </table>
@@ -200,11 +218,45 @@
         </div>
     </div>
     <footer>
-       <div class="footer--link">
-           <a class="link" href="https://meet.google.com/poi-drir-quw">Google meet chép bài</a>
-           <br>
-           <a class="link" href="https://meet.google.com/nos-uvuy-nje">Google meet lớp học </a>
-       </div> 
+        <div class="footer--link">
+            <a class="link" href="https://meet.google.com/poi-drir-quw">Google meet chép bài</a>
+            <br>
+            <a class="link" href="https://meet.google.com/nos-uvuy-nje">Google meet lớp học </a>
+            <br>
+            <script src="./script/script.js"></script>
+            <SCRIPT>
+
+                expireDate = new Date
+                expireDate.setMonth(expireDate.getMonth()+6)
+                jcount = eval(cookieVal("jaafarCounter"))
+                jcount++
+                document.cookie = "jaafarCounter="+jcount+";expires=" + expireDate.toGMTString()
+                
+                function cookieVal(cookieName) {
+                thisCookie = document.cookie.split("; ")
+                for (i=0; i<thisCookie.length; i++){
+                    if (cookieName == thisCookie[i].split("=")[0]){
+                        return thisCookie[i].split("=")[1]
+                    }
+                }
+                return 0
+                }
+                
+                function page_counter(){
+                for (i=0;i<(7-jcount.toString().length);i++)
+                document.write('<span class="counter">0</span>')
+                for (y=0;y<(jcount.toString().length);y++)
+                document.write('<span class="counter">'+jcount.toString().charAt(y)+'</span>')
+                }
+                
+                </SCRIPT>
+                    <!--
+                        This script downloaded from www.JavaScriptBank.com
+                        Come to view and download over 2000+ free javascript at www.JavaScriptBank.com
+                    -->
+                
+            <b>You visited this page <SCRIPT>page_counter(jcount);</SCRIPT> time(s).</b>
+        </div>
     </footer>
 </body>
 
