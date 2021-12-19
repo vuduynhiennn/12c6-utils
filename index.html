@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tiện ích 12c6</title>
+    <title>Vũ Duy Nhiên</title>
     <link rel="icon" href="favicon_io\favicon-16x16.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
@@ -25,7 +25,9 @@
             font-weight: bold;
         }
     </style>
-
+    <link rel="stylesheet" href="./style/cd.css">
+    <script src="./script/countdown.js"> </script>
+    <script src="./script/countdown2.js"></script>
 </head>
 
 <body>
@@ -39,50 +41,101 @@
                     <p style="padding-left: 20px;">Tải app</p>
                 </div>
             </a>
-            <div id="time">
-            </div>
+            <!-- timeTbale  -->
 
-            <!-- <marquee behavior="" direction=""></marquee> -->
-
-            <marquee width="30%" class="icon">
-                You know what it's like to wake up in the middle of the night with a vivid dream? And you know that if you don't have a pencil and pad by the bed, it will be completely gone by the next morning. Sometimes it's important to wake up and stop dreaming. When a really great dream shows up, grab it.
+            <marquee style="color: white;" width="60%" class="iconne">
+                You know what it's like to wake up in the middle of the night with a vivid dream? And you know that if
+                you don't have a pencil and pad by the bed, it will be completely gone by the next morning. Sometimes
+                it's important to wake up and stop dreaming. When a really great dream shows up, grab it.
             </marquee>
+
         </div>
 
     </header>
+
+
+
 
     <div class="main">
         <div class="main--left">
             <div class="container">
                 <div class="note note--blue">
                     <div class="btvn">
-                        <h1 class="headingTop">63 ngày nữa thôi ! cố lên</h1>
+
+
+                        <div style="margin-top: -49px;" class="container">
+                            <h1 id="headline">Đếm ngày thi thpt quốc gia</h1>
+                            <div id="countdown">
+                                <ul>
+                                    <li><span id="days"></span>days</li>
+                                    <li><span id="hours"></span>Hours</li>
+                                    <li><span id="minutes"></span>Minutes</li>
+                                    <li><span id="seconds"></span>Seconds</li>
+                                </ul>
+                            </div>
+                            <div id="content" class="emoji">
+                                <span>🥳</span>
+                                <span>🎉</span>
+                                <span>🎂</span>
+                            </div>
+                        </div>
+
+                        <br>
+                        <br>
+                        <div class="container">
+                            <h1 id="headline2">hoàn thành bài giảng</h1>
+                            <div id="countdown2">
+                                <ul>
+                                    <li><span id="days2"></span>days</li>
+                                    <li><span id="hours2"></span>Hours</li>
+                                    <li><span id="minutes2"></span>Minutes</li>
+                                    <li><span id="seconds2"></span>Seconds</li>
+                                </ul>
+                            </div>
+                            <div id="content2" class="emoji">
+                                <span>🥳</span>
+                                <span>🎉</span>
+                                <span>🎂</span>
+                            </div>
+                        </div>
+
+
+                        <div class="timeTable">
+                            <table></table>
+                        </div>
+
 
                         <div class="btvn--box">
-                            <h1 class="monhoc">Hóa</h1>
+                            <h1 class="monhoc">
+                                không
+                                <!-- Hóa -->
+                                <!-- Toán  -->
+
+                            </h1>
                             <p class="footer--text">
                                 <span class="content"> Nội dung: </span>
                                 <br>
                                 <span style="color: black;" class="content">
 
-                                    Chép phạt 200 lần :))))
-                                
-            
+                                    không có bài bạn tôi ạ
+
+
                                 </span>
                                 <br>
                                 <span class="content">Hạn: </span> <span class="content" style="color: red;"
                                     class="red">
-                                    Chiều mai
+                                    <!-- Chiều mai -->
+                                    không
                                 </span>
 
-                            
+
                                 <br>
 
-                                
+
                             </p>
                         </div>
 
-                        <div class="btvn--box">
+                        <!-- <div class="btvn--box">
                             <h1 class="monhoc">Lí</h1>
                             <p class="footer--text">
                                 <span class="content"> Nội dung: </span>
@@ -90,8 +143,8 @@
                                 <span style="color: black;" class="content">
 
                                     Chép phạt 10 lần :))))
-                                
-            
+
+
                                 </span>
                                 <br>
                                 <span class="content">Hạn: </span> <span class="content" style="color: red;"
@@ -99,12 +152,12 @@
                                     sáng mai
                                 </span>
 
-                            
+
                                 <br>
 
-                                
+
                             </p>
-                        </div>
+                        </div> -->
 
                         <!-- <div class="btvn--box">
                             <h1 class="monhoc">Hôm nay k có bài</h1>
@@ -130,7 +183,7 @@
                             </p>
                         </div> -->
 
-<!-- 
+                        <!-- 
                         <div class="btvn--box">
                             <h1 class="monhoc">Sinh</h1>
                             <p class="footer--text">
@@ -173,7 +226,7 @@
                         </div>
  -->
 
-<!-- 
+                        <!-- 
                         <div class="btvn--box">
                             <h1 class="monhoc">Hóa</h1>
                             <p class="footer--text">
@@ -223,173 +276,194 @@
 
             </div>
         </div> -->
+                        <h1 style="font-size: 14px;">thời gian biểu (cố mà làm theo bạn tôi ạ)</h1>
+                        <br>
+                        <h1 style="font-size: 14px;">cho học lập trình ngày chủ nhật</h1>
+                        <br>
 
-        <div class="main--right">
-            <h1>cập nhật 29/11/2021</h1>
-            <br>
-            <div class="main--right__content">
-                <table class="morning">
-                    <thead>
-                        <tr>
-                            <th>Thứ 2</th>
-                            <th>Thứ 3</th>
-                            <th>Thứ 4</th>
-                            <th>Thứ 5</th>
-                            <th>Thứ 6</th>
-                            <th>Thứ 7</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Chào cờ</td>
-                            <td>thể dục</td>
-                            <td>lí</td>
-                            <td>toán</td>
-                            <td>lí</td>
-                            <td>anh</td>
-                        </tr>
-                        <tr>
-                            <td>văn</td>
-                            <td>anh</td>
-                            <td>tin</td>
-                            <td>toán</td>
-                            <td>địa lí</td>
-                            <td>Sử</td>
-                        </tr>
-                        <tr>
-                            <td>văn</td>
-                            <td>toán</td>
-                            <td>sử</td>
-                            <td>công nghệ</td>
-                            <td>văn</td>
-                            <td>sh</td>
-                        </tr>
-                        <tr>
-                            <td>hóa</td>
-                            <td>hóa</td>
-                            <td>toán</td>
-                            <td>gdqp</td>
-                            <td>hóa</td>
-                            <td>sinh</td>
-                        </tr>
-                        <tr>
-                            <td>lí</td>
-                            <td>sinh</td>
-                            <td>toán</td>
-                            <td>anh</td>
-                            <td>td</td>
-                            <td>gdcd</td>
-                        </tr>
-                    </tbody>
-                </table>
 
-                <table class="afternoon">
-                    <thead>
-                        <tr>
-                            <th>Chiều</th>
-                            <th>Chiều</th>
-                            <th>Chiều</th>
-                            <th>Chiều</th>
-                            <th>Chiều</th>
-                            <th>Chiều</th>
+                        <div class="main--right">
+                            <div class="main--right__content">
+                                <table class="morning">
+                                    <thead>
+                                        <tr>
+                                            <th>4:00</th>
+                                            <th>5:30</th>
+                                            <th>12:30</th>
+                                            <th>12:50</th>
+                                            <th>13:30</th>
+                                            <th>17:50</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Học anh</td>
+                                            <td>ăn sáng, chuẩn bị đi học</td>
+                                            <td>ngủ</td>
+                                            <td>dậy, chuẩn bị đi học</td>
+                                            <td>đi học</td>
+                                            <td>làm toán</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Sinh</td>
-                            <td>Toán</td>
-                            <td> </td>
-                            <td>Lí</td>
-                            <td>Lí</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>Văn</td>
-                            <td>Anh</td>
-                            <td> </td>
-                            <td>Toán</td>
-                            <td>Hóa</td>
-                            <td> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer--link">
-            <a class="link" href="https://meet.google.com/poi-drir-quw">Google meet chép bài</a>
-            <br>
-            <a class="link" href="https://meet.google.com/nos-uvuy-nje">Google meet lớp học </a>
-            <br>
-            <script src="./script/script.js"></script>
-            <SCRIPT>
+                                <table class="morning">
+                                    <thead>
+                                        <tr>
+                                            <th>19:30</th>
+                                            <th>20:10</th>
+                                            <th>21:00</th>
+                                            <th>22:00</th>
+                                            <th>22:30</th>
+                                            <th>22:50</th>
+                                            <th>23:00</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>làm anh</td>
+                                            <td>làm toán</td>
+                                            <td>làm lí</td>
+                                            <td>cứ làm lí đi</td>
+                                            <td>vẫn làm lí</td>
+                                            <td>chuẩn bị đi ngủ thôi bạn</td>
+                                            <td>ngủ</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-                expireDate = new Date
-                expireDate.setMonth(expireDate.getMonth() + 6)
-                jcount = eval(cookieVal("jaafarCounter"))
-                jcount++
-                document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+                                <h1 style="font-size: 14px;">thời khóa biểu cập nhật 29/11/2021</h1>
+                                <br>
 
-                function cookieVal(cookieName) {
-                    thisCookie = document.cookie.split("; ")
-                    for (i = 0; i < thisCookie.length; i++) {
-                        if (cookieName == thisCookie[i].split("=")[0]) {
-                            return thisCookie[i].split("=")[1]
-                        }
-                    }
-                    return 0
-                }
 
-                function page_counter() {
-                    for (i = 0; i < (7 - jcount.toString().length); i++)
-                        document.write('<span class="counter">0</span>')
-                    for (y = 0; y < (jcount.toString().length); y++)
-                        document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
-                }
+                                <table class="morning">
+                                    <thead>
+                                        <tr>
+                                            <th>Thứ 2</th>
+                                            <th>Thứ 3</th>
+                                            <th>Thứ 4</th>
+                                            <th>Thứ 5</th>
+                                            <th>Thứ 6</th>
+                                            <th>Thứ 7</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Chào cờ</td>
+                                            <td>thể dục</td>
+                                            <td>lí</td>
+                                            <td>toán</td>
+                                            <td>lí</td>
+                                            <td>anh</td>
+                                        </tr>
 
-            </SCRIPT>
-            <!--
-                        This script downloaded from www.JavaScriptBank.com
-                        Come to view and download over 2000+ free javascript at www.JavaScriptBank.com
-                    -->
+                                        <tr>
+                                            <td>văn</td>
+                                            <td>anh</td>
+                                            <td>tin</td>
+                                            <td>toán</td>
+                                            <td>địa lí</td>
+                                            <td>Sử</td>
+                                        </tr>
+                                        <tr>
+                                            <td>văn</td>
+                                            <td>toán</td>
+                                            <td>sử</td>
+                                            <td>công nghệ</td>
+                                            <td>văn</td>
+                                            <td>sh</td>
+                                        </tr>
+                                        <tr>
+                                            <td>hóa</td>
+                                            <td>hóa</td>
+                                            <td>toán</td>
+                                            <td>gdqp</td>
+                                            <td>hóa</td>
+                                            <td>sinh</td>
+                                        </tr>
+                                        <tr>
+                                            <td>lí</td>
+                                            <td>sinh</td>
+                                            <td>toán</td>
+                                            <td>anh</td>
+                                            <td>td</td>
+                                            <td>gdcd</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-            <b>You visited this page
-                <SCRIPT>page_counter(jcount);</SCRIPT> time(s).
-            </b>
-        </div>
-    </footer>
-    <!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
+                                <table class="afternoon">
+                                    <thead>
+                                        <tr>
+                                            <th>Chiều</th>
+                                            <th>Chiều</th>
+                                            <th>Chiều</th>
+                                            <th>Chiều</th>
+                                            <th>Chiều</th>
+                                            <th>Chiều</th>
 
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Sinh</td>
+                                            <td>Toán</td>
+                                            <td> </td>
+                                            <td>Lí</td>
+                                            <td>Lí</td>
+                                            <td> </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Văn</td>
+                                            <td>Anh</td>
+                                            <td> </td>
+                                            <td>Toán</td>
+                                            <td>Hóa</td>
+                                            <td> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="footer--link">
+                            <a class="link" href="https://meet.google.com/poi-drir-quw">Google meet chép bài</a>
+                            <br>
+                            <a class="link" href="https://meet.google.com/nos-uvuy-nje">Google meet lớp học </a>
+                            <br>
 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "105709235137013");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
+                    </footer>
+                    <!-- Messenger Plugin chat Code -->
+                    <div id="fb-root"></div>
 
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
+                    <!-- Your Plugin chat code -->
+                    <div id="fb-customer-chat" class="fb-customerchat">
+                    </div>
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+                    <script>
+                        var chatbox = document.getElementById('fb-customer-chat');
+                        chatbox.setAttribute("page_id", "105709235137013");
+                        chatbox.setAttribute("attribution", "biz_inbox");
+                    </script>
+
+                    <!-- Your SDK code -->
+                    <script>
+                        window.fbAsyncInit = function () {
+                            FB.init({
+                                xfbml: true,
+                                version: 'v12.0'
+                            });
+                        };
+
+                        (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s); js.id = id;
+                            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script>
 </body>
 
 </html>
