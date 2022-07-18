@@ -3,7 +3,7 @@
           minute = second * 60,
           hour = minute * 60,
           day = hour * 24;
-  
+    // something changed
     //I'm adding this section so I don't have to keep updating this pen every year :-)
     //remove this if you don't need it
     let today = new Date(),
